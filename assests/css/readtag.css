@@ -1,0 +1,45 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+    #awal {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins',sans-serif;
+        border: none;
+    }
+    
+    #awal h2 {
+       padding-left: 250px;
+       
+    }
+     
+    #show_user_data {
+       padding-left: 150px;
+       padding-bottom: 80px;
+    }
+
+    #show_user_data form {
+       
+        width:452px;
+        border-style: none;
+        background-color: white;
+       
+    }
+    #show_user_data b{
+        padding-left: 200px;
+    }
+
+    #show_user_data form td {
+        width:1130px;
+       
+    }
+		@media screen and (max-width: 600px) {
+			ul.topnav li.right, 
+			ul.topnav li {float: none;}
+		}
+		
+		td.lf {
+			padding-left: 10px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+        

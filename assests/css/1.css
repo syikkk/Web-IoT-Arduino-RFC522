@@ -1,0 +1,97 @@
+
+
+.body1{
+  position:relative;
+}
+.utama{
+  display: flex;
+}
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: context-menu;
+}
+.modal{
+  pointer-events:none
+  text-align: center;
+  background-color: white;
+  position: absolute;
+  width:90%;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  padding: 100px auto;
+  display: none;
+  color: black;
+  z-index: 9999;
+  border-bottom-left-radius:12px;
+  border-bottom-right-radius:12px;
+  border-top-left-radius:12px;
+  border-top-right-radius:12px;
+  animation: slide_up 1.4s ease;
+}
+.modal .atas{
+  width: 100%;
+  background-color: white;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  border-top-left-radius:12px;
+  border-top-right-radius:12px;
+  display: flex;
+  justify-content: center;
+}
+.modal .atas p{
+  font-size: 24px;
+}
+.modal .atas .close{
+  font-size: 24px;
+  cursor: pointer;
+  right: 0;
+  position: absolute;
+  margin-right: 5px;
+}
+.modal .header .close i:hover{
+  border-radius: 50%;
+  color: white;
+}
+.modal .body1{
+  margin-top:20px;
+}
+.modal .body1 img{
+  max-width:70%;
+}
+.modal .body1 p{
+  font-size: 14px;
+  margin: auto 50px;
+  /*animation: slide_up 1.4s ease;*/
+  padding-bottom: 20px;
+  text-align:justify;
+}
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+@keyframes slide_up{
+  0%{
+    transform: translateY(500px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
